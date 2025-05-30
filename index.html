@@ -13,8 +13,11 @@
      <script src="script.js"></script>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
     </head>
    <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
+    <canvas id="snow"></canvas>
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
@@ -46,31 +49,32 @@
     <!-- Navbar End -->
     <!-- Jumbotron Start -->
     <section class="jumbotron text-center" id="home">
-    <br><img src="apa.png" alt="kristian lan nahak" width="200" class="rounded-circle img-thumbnail">
+    <br><img src="apa.png" alt="kristian lan nahak" width="200" class="rounded-circle img-thumbnail mb-3">
     <h1 style="font-family: 'Castellar', serif; font-style: italic;color:;" class="display-4 fw-bold">KRISTIAN LAN NAHAK</h1>
-    <h3 class="typing-animation lead fw-bold" id="typing-text">Teknik Jaringan Komputer & Telekomunikasi</h3>
+    <h3 class="typing-animation lead " id="typing-text" style="color: rgb(97, 97, 241);"><i><b>I am a Frontend Developer</b></i></h3>
     <br>
    <div class="container py-5">
     <!-- Button to trigger first modal -->
-         <div class="button-group">
+     <div class="button-group">
       <div class="button-wrapper">
-    <button type="button" class="tombol btn-primary me-2 rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+    <button type="button" class="tombol btn-primary me-2 rounded-pill px-4 " data-bs-toggle="modal" data-bs-target="#exampleModal1">
       PREVEW CV →
-    </button>
+      </button>
       </div>
-             <div class="button-wrapper">
-   <button type="button" class="tombol btn-secondary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+    <div class="button-wrapper">
+   <button type="button" class="tombol btn-secondary rounded-pill px-4 " data-bs-toggle="modal" data-bs-target="#exampleModal2">
      SURAT LAMARAN →
     </button>
   </div>
- </div>
+</div>
    </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,32L48,58.7C96,85,192,139,288,149.3C384,160,480,128,576,101.3C672,75,768,53,864,80C960,107,1056,181,1152,192C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
   
 </section>
     <!-- Jumbotron End -->
-
-     <!-- About Start -->
+      <!-- ========================================== -->
+      <!--           BAGIAN ABOUT                     -->
+      <!-- ========================================== -->
      <div class="section About " id="about">
     <div class="container">
     <div class="row text-center mb-5">
@@ -87,8 +91,8 @@
     </div>
     </div>
     
-    <div class="col-lg-6 mb-3">
-              <p>
+    <div class=" col-lg-6 mb-3">
+              <p class="ubah">
                Saya Kristian Lan Nahak 
                telah mengikuti kelas <b>"Perancangan dan Manajemen jaringaan"</b> pada GAMELAB INDONESIA yang berlokasi di sala tiga jawa tengah
                dan telah dinyatakan lulus dengan mendapatkan predikat memuaskan dengan nilai 90 dan diberikan sebuah sertifikat kelulusan.
@@ -100,10 +104,6 @@
     
 </section>
 
-
-<!---->
-<!-- About Start -->
-
   <div class="container">
     <div class="row text-center mb-5">
       <div class="col">
@@ -111,8 +111,8 @@
       </div>
     </div>
     <div class="row justify-content-center fs-5 ">
-      <div class="col-lg-6 mb-3">
-        <p>
+      <div class=" col-lg-6 mb-3">
+        <p class="ubah">
            Saya Kristian Lan Nahak
                Telah mengikuti kelas<br> <b>"Sistem Operasi Linux"</b> pada GAMELAB INDONESIA yang berlokasi di sala tiga jawa tengah
                dan telah dinyatakan lulus dengan mendapatkan predikat memuaskan dengan nilai 95 dan diberikan sebuah sertifikat kelulusan.
@@ -128,8 +128,10 @@
   </div>
 </section>
 <!--About And-->
-  <!-- Second Modal -->
-      
+
+       <!-- ========================================== -->
+       <!--           BAGIAN MODAL                     -->
+       <!-- ========================================== -->
   <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -147,9 +149,7 @@
       </div>
     </div>
   </div>
-
-
-  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -167,12 +167,13 @@
     </div>
   </div>
 
-    
-<!-- Section Galeri -->
+                            <!-- ========================================== -->
+                            <!--           BAGIAN GALLERY                   -->
+                            <!-- ========================================== -->
  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b1d4e0" fill-opacity="500" d="M0,128L21.8,128C43.6,128,87,128,131,117.3C174.5,107,218,85,262,106.7C305.5,128,349,192,393,186.7C436.4,181,480,107,524,64C567.3,21,611,11,655,32C698.2,53,742,107,785,144C829.1,181,873,203,916,213.3C960,224,1004,224,1047,202.7C1090.9,181,1135,139,1178,106.7C1221.8,75,1265,53,1309,80C1352.7,107,1396,181,1418,218.7L1440,256L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
  
 <div class="section Galeri" id="Galeri">
-  <h2 class="fw-bold bi-images text-center" style="color: magenta;" >Gallery</h2>
+  <h2 class="fw-bold bi-images text-center" style="color: magenta;" > Gallery</h2>
   <div class="container mt-4">
       <div class="row g-4">
           <div class="col-md-3">
@@ -202,8 +203,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b1d4e0" fill-opacity="1" d="M0,160L40,181.3C80,203,160,245,240,229.3C320,213,400,139,480,122.7C560,107,640,149,720,186.7C800,224,880,256,960,240C1040,224,1120,160,1200,165.3C1280,171,1360,245,1400,282.7L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 
 <!--akhir Galeri-->
-<!-- Section Project -->
 
+ <!-- ========================================== -->
+ <!--           BAGIAN PROJECT                   -->
+ <!-- ========================================== -->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <style>
@@ -249,10 +252,8 @@
   </style>
 <div class="section project text-center mb-3" id="project"></div>
   <div class="container">
-    <h2 class="projects-title"><i class="bi-code-slash"></i>Project</h2>
+    <h2 class="projects-title"><i class="bi-code-slash"></i> Project</h2>
     <div class="row g-4 justify-content-center">
-
-      <!-- Project 1 -->
       <div class="col-md-4">
         <div class="card project-card">
           <img src="gif3.gif" alt="Project 1" class="project-img"/>
@@ -262,8 +263,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Project 2 -->
       <div class="col-md-4">
         <div class="card project-card">
           <img src="gif.gif" alt="Project 2" class="project-img"/>
@@ -273,8 +272,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Project 3 -->
       <div class="col-md-4">
         <div class="card project-card">
           <img src="gif2.gif" alt="Project 3" class="project-img"/>
@@ -284,21 +281,17 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
-
 </section>
+<!--akhir project-->
 
-  <!-- Bootstrap Icons CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
-
-   <!--akhir project-->
-
- <!-- Contact Section -->
+ <!-- ========================================== -->
+ <!--           BAGIAN CONTACT                   -->
+ <!-- ========================================== -->
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b1d4e0" fill-opacity="1" d="M0,64L40,101.3C80,139,160,213,240,250.7C320,288,400,288,480,261.3C560,235,640,181,720,176C800,171,880,213,960,240C1040,267,1120,277,1200,256C1280,235,1360,181,1400,154.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
- <section class="section contact" id="contact">
-    <div class="container text-center">
+ <section class="section contact " id="contact">
+    <div class="container text-center mb-5">
       <h2 class="h2 fw-bold mb-5 bi-chat-dots-fill " style="color:magenta;"> Contact</h2>
       <form class="mx-auto" style="max-width:600px;">
         <div class="mb-4 row align-items-center">
@@ -324,24 +317,29 @@
         </div>
       </form>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b1d4e0" fill-opacity="1" d="M0,128L40,112C80,96,160,64,240,96C320,128,400,224,480,250.7C560,277,640,235,720,197.3C800,160,880,128,960,149.3C1040,171,1120,245,1200,277.3C1280,309,1360,299,1400,293.3L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 </section>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b1d4e0" fill-opacity="1" d="M0,128L40,112C80,96,160,64,240,96C320,128,400,224,480,250.7C560,277,640,235,720,197.3C800,160,880,128,960,149.3C1040,171,1120,245,1200,277.3C1280,309,1360,299,1400,293.3L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-    
- ></script>
-    <script>
-      const el = document.getElementById('typing-text');
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b1d4e0" fill-opacity="1" d="M0,128L40,112C80,96,160,64,240,96C320,128,400,224,480,250.7C560,277,640,235,720,197.3C800,160,880,128,960,149.3C1040,171,1120,245,1200,277.3C1280,309,1360,299,1400,293.3L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 
-    function ulangAnimasi() {
+<!-- ========================================== -->
+ <!--           BAGIAN JAVA SCRIPT               -->
+ <!-- ========================================== --> 
+<script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+    </script>
+
+  <script>
+const el = document.getElementById('typing-text');
+function ulangAnimasi() {
       el.style.animation = 'none';    
       el.offsetHeight;                
       el.style.animation = null;      
     }
     setInterval(ulangAnimasi, 3000);
-  
+  </script>
+  <script>
     const dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'));
   dataSpyList.forEach(function (dataSpyEl) {
     bootstrap.ScrollSpy.getInstance(dataSpyEl)?.refresh() || new bootstrap.ScrollSpy(dataSpyEl, {
@@ -349,21 +347,82 @@
       offset: parseInt(dataSpyEl.getAttribute('data-bs-offset')) || 0
     });
   });
-  
+  </script>
+  <script>
+  const canvas = document.getElementById('snow');
+  const ctx = canvas.getContext('2d');
+  let width, height;
+  let snowflakes = [];
+
+  function init() {
+    resize();
+    snowflakes = [];
+    for (let i = 0; i < 100; i++) {
+      snowflakes.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 4 + 1,
+        speed: Math.random() * 1 + 0.5,
+        wind: Math.random() * 1 - 0.5,
+      });
+    }
+    animate();
+  }
+
+  function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = 'white';
+    ctx.shadowColor = 'white';
+    ctx.shadowBlur = 5;
+
+    for (let flake of snowflakes) {
+      ctx.beginPath();
+      ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+      ctx.fill();
+
+      flake.y += flake.speed;
+      flake.x += flake.wind;
+
+      if (flake.y > height) {
+        flake.y = 0;
+        flake.x = Math.random() * width;
+      }
+      if (flake.x > width) flake.x = 0;
+      if (flake.x < 0) flake.x = width;
+    }
+    requestAnimationFrame(animate);
+  }
+
+  window.addEventListener('resize', resize);
+  init();
+  </script>
 </script>
   </body>
+      <!-- ========================================== -->
+      <!--           BAGIAN FOOTER                    -->
+      <!-- ========================================== -->
       <footer class="bg-white text-white pt-5 pb-4">
   <div class="container text-center text-md-start">
     <div class="row text-center text-md-start">
       <!-- About -->
-      <div class="text col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <div class=" text col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Kristian Lan Nahak</h5>
-        <p>
+        <p class="ubah">
           Siswa SMK Negeri 1 Kupang | Jurusan TJKT | Kelas Industri Gamelab.
-          Portofolio ini adalah representasi dari perjalanan belajarku di dunia teknologi dan pemrograman.
+          Portofolio ini adalah Representasi dari Perjalanan Belajar Saya di dunia<br> 
+          Teknologi  & Pemrograman.
         </p>
+              
+<p class="pesan"><i><b>"Koding bukan hanya soal menulis baris demi baris, tapi tentang menyusun mimpi jadi nyata. Setiap error adalah guru, dan setiap keberhasilan adalah bukti bahwa kerja keras itu layak."</b></i></p>
+      
       </div>
-
       <!-- Links -->
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Menu</h5>
