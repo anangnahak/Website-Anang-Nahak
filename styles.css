@@ -255,5 +255,48 @@ body {
       from, to { border-color: transparent }
       50% { border-color:transparent }
     }
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.button-wrapper {
+  flex: 1 1 100%;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(to right, #007bff, #ff69b4);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-wrapper:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 601px) {
+  .button-wrapper {
+    flex: 1 1 45%;
+    margin-bottom: 0;
+  }
+}
 
 
