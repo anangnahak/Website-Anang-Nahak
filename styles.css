@@ -32,6 +32,22 @@ body {
   transform: scale(1.05);
 }
 
+.tombol {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(to right, #1e90ff, #ff69b4);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.tombol:hover {
+  background: linear-gradient(to right, #ff69b4, #1e90ff);
+  color: white;
+  transform: scale(1.05);
+}
+
 .responsive {
   width: 100%;
   height: auto;
